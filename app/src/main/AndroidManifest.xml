@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MessedUp">
-        <activity android:name=".dashboard.HomeActivity"></activity>
+        <activity android:name=".dashboard.NewActivity"></activity>
+        <activity android:name=".dashboard.UploadNotice">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".dashboard.HomeActivity" />
+        </activity>
+        <activity android:name=".dashboard.ManageNotice" />
+        <activity android:name=".dashboard.AdminLogin" />
+        <activity android:name=".dashboard.HomeActivity" />
         <activity android:name=".notice.ShowNotice" />
         <activity android:name=".notice.AddNotice" />
         <activity android:name=".notice.NoticeActivity" />

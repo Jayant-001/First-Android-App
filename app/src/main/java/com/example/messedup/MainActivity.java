@@ -10,18 +10,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.messedup.dashboard.HomeActivity;
+import com.example.messedup.dashboard.NewActivity;
 import com.example.messedup.notice.NoticeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private CardView first, second, third, fourth, fifth, sixth;
-    private TextView notice;
+    private TextView notice, designPage;
     TextView text2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        designPage = findViewById(R.id.design_page);
+
+        designPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, NewActivity.class));
+            }
+        });
 
         text2 = findViewById(R.id.text2);
         text2.setOnClickListener(new View.OnClickListener() {

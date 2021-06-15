@@ -2,13 +2,13 @@ package com.example.messedup.dashboard;
 
 public class Notice {
 
-    String name, date, time, title, desc, image;
+    String author, date, time, title, desc, image;
 
     public Notice() {
     }
 
-    public Notice(String name, String date, String time, String title, String desc, String image) {
-        this.name = name;
+    public Notice(String author, String date, String time, String title, String desc, String image) {
+        this.author = author;
         this.date = date;
         this.time = time;
         this.title = title;
@@ -16,23 +16,19 @@ public class Notice {
         this.image = image;
     }
 
-    public Notice(String name, String date, String time, String title, String desc) {
-        this.name = name;
+    public Notice(String author, String date, String time, String title, String desc) {
+        this.author = author;
         this.date = date;
         this.time = time;
         this.title = title;
         this.desc = desc;
     }
 
-    public Notice(String title, String desc) {
-        this.title = title;
-        this.desc = desc;
-    }
 
     @Override
     public String toString() {
         return "Notice{" +
-                "name='" + name + '\'' +
+                "author='" + author + '\'' +
                 ", date='" + date + '\'' +
                 ", time='" + time + '\'' +
                 ", title='" + title + '\'' +
@@ -41,12 +37,12 @@ public class Notice {
                 '}';
     }
 
-    public String getName() {
-        return name;
+    public String getauthor() {
+        return author;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setauthor(String author) {
+        this.author = author;
     }
 
     public String getDate() {
