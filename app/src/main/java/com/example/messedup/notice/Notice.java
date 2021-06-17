@@ -1,4 +1,4 @@
-package com.example.messedup.dashboard;
+package com.example.messedup.notice;
 
 public class Notice {
 

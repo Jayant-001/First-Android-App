@@ -11,12 +11,11 @@ import android.widget.Toast;
 
 import com.example.messedup.dashboard.HomeActivity;
 import com.example.messedup.dashboard.NewActivity;
-import com.example.messedup.notice.NoticeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private CardView first, second, third, fourth, fifth, sixth;
-    private TextView notice, designPage;
+    private TextView designPage;
     TextView text2;
 
     @Override
@@ -42,13 +41,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        notice = findViewById(R.id.notice_page);
-        notice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, NoticeActivity.class));
-            }
-        });
 
         first = findViewById(R.id.first_year);
         second = findViewById(R.id.second_year);

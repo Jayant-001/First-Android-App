@@ -14,7 +14,7 @@
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginBottom="55dp"
+            android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -46,7 +46,7 @@
         android:id="@+id/fab_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_books"
+        android:src="@drawable/ic_notice"
         app:layout_anchor="@id/bottom_app_bar"
         android:contentDescription="Add Books"
         android:backgroundTint="@color/white"/>

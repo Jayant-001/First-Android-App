@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MessedUp">
-        <activity android:name=".dashboard.NewActivity"></activity>
-        <activity android:name=".dashboard.UploadNotice">
+        <activity android:name=".jokes.JokesActivity"></activity>
+        <activity android:name=".user.AdminSignup" />
+        <activity android:name=".dashboard.NewActivity" />
+        <activity android:name=".notice.UploadNotice">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dashboard.HomeActivity" />
         </activity>
-        <activity android:name=".dashboard.ManageNotice" />
-        <activity android:name=".dashboard.AdminLogin" />
+        <activity android:name=".notice.ManageNotice" />
+        <activity android:name=".user.AdminLogin" />
         <activity android:name=".dashboard.HomeActivity" />
         <activity android:name=".notice.ShowNotice" />
-        <activity android:name=".notice.AddNotice" />
-        <activity android:name=".notice.NoticeActivity" />
         <activity android:name=".BookActivity" />
         <activity android:name=".SubjectActivity" />
         <activity android:name=".BranchActivity" />

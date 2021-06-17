@@ -15,7 +15,6 @@ import com.example.messedup.R;
 
 public class AdminFragment extends Fragment {
 
-    Button adminLoginBtn;
 
     public AdminFragment() {
         // Required empty public constructor
@@ -34,14 +33,7 @@ public class AdminFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_admin, container, false);
 
-        adminLoginBtn = view.findViewById(R.id.admin_login_btn);
 
-        adminLoginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(view.getContext(), AdminLogin.class));
-            }
-        });
 
         return view;
     }

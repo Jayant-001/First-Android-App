@@ -1,4 +1,4 @@
-package com.example.messedup.dashboard;
+package com.example.messedup.user;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.messedup.R;
+import com.example.messedup.dashboard.HomeActivity;
+import com.example.messedup.notice.ManageNotice;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -59,7 +61,7 @@ public class AdminLogin extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
                                 Toast.makeText(AdminLogin.this, "Signin successfully", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(AdminLogin.this, ManageNotice.class));
+                                startActivity(new Intent(AdminLogin.this, HomeActivity.class));
                                 finish();
                             }
                         }).addOnFailureListener(new OnFailureListener() {

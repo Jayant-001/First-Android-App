@@ -1,24 +1,38 @@
 package com.example.messedup.notice;
 
-import com.example.messedup.R;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.firebase.database.FirebaseDatabase;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
-public class ShowNotice extends AppCompatActivity {
+import com.example.messedup.R;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.database.FirebaseDatabase;
 
-    private RecyclerView recyclerView;
-    private NoticeAdapter adapter;
+public class ManageNotice extends AppCompatActivity {
+
+    FloatingActionButton addNoticeBtn;
+    RecyclerView recyclerView;
+    NoticeAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_notice);
+        setContentView(R.layout.activity_manage_notice);
+
+        addNoticeBtn = findViewById(R.id.add_notice_icon);
+
+        addNoticeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ManageNotice.this, UploadNotice.class));
+            }
+        });
+
 
         recyclerView = findViewById(R.id.recycler_view);
         LinearLayoutManager linearLayout = new LinearLayoutManager(this);
