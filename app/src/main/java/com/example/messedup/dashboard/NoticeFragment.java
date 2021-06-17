@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.messedup.R;
+import com.example.messedup.jokes.JokesActivity;
 import com.example.messedup.user.AdminLogin;
 import com.example.messedup.user.AdminSignup;
 import com.example.messedup.notice.ManageNotice;
@@ -111,6 +112,15 @@ public class NoticeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(view.getContext(), AdminSignup.class));
+            }
+        });
+
+
+
+        showJokes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(view.getContext(), JokesActivity.class));
             }
         });
 
