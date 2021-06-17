@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MessedUp">
-        <activity android:name=".jokes.JokesActivity"></activity>
+        <activity android:name=".meme.MemeActivity"></activity>
+        <activity android:name=".jokes.JokesActivity" />
         <activity android:name=".user.AdminSignup" />
         <activity android:name=".dashboard.NewActivity" />
         <activity android:name=".notice.UploadNotice">

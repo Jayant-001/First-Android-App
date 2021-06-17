@@ -82,7 +82,7 @@ public class NoticeAdapter extends FirebaseRecyclerAdapter<Notice, NoticeAdapter
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 Toast.makeText(v.getContext(), "Notice deleted.", Toast.LENGTH_SHORT).show();
                                                 ((Activity)holder.postTime.getContext()).finish();
-                                                holder.postTime.getContext().startActivity(new Intent(holder.showText.getContext(), ShowNotice.class));
+                                                holder.postTime.getContext().startActivity(new Intent(holder.showText.getContext(), ManageNotice.class));
                                             }
                                         });
                                     }
