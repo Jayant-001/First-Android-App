@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.messedup.R;
+import com.example.messedup.ebooks.BookActivity;
 import com.example.messedup.jokes.JokesActivity;
 import com.example.messedup.meme.MemeActivity;
 import com.example.messedup.user.AdminLogin;
@@ -78,10 +79,7 @@ public class NoticeFragment extends Fragment {
         showBooks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AdminFragment adminFragment = new AdminFragment();
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, adminFragment, "findThisFragment")
-                        .addToBackStack(null).commit();
+                startActivity(new Intent(view.getContext(), BookActivity.class));
             }
         });
 

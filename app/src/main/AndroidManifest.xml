@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.messedup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MessedUp">
-        <activity android:name=".meme.MemeActivity"></activity>
+        <activity android:name=".ebooks.BookActivity"></activity>
+        <activity android:name=".meme.MemeActivity" />
         <activity android:name=".jokes.JokesActivity" />
         <activity android:name=".user.AdminSignup" />
         <activity android:name=".dashboard.NewActivity" />
