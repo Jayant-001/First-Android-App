@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.messedup.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.github.chrisbanes.photoview.PhotoView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -136,7 +137,7 @@ public class NoticeAdapter extends FirebaseRecyclerAdapter<Notice, NoticeAdapter
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView showTitle, showText, postDate, postTime, adminName;
-        ImageView noticeImage;
+        PhotoView noticeImage;
         FloatingActionButton deleteNoticeBtn;
 
         public ViewHolder(@NonNull View itemView) {

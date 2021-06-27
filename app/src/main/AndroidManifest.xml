@@ -18,11 +18,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MessedUp">
-        <activity android:name=".ebooks.BookActivity"></activity>
+        <activity android:name=".ebooks.IT"></activity>
+        <activity android:name=".ebooks.IC" />
+        <activity android:name=".ebooks.EC" />
+        <activity android:name=".ebooks.CSE" />
+        <activity android:name=".ebooks.SemesterActivity" />
         <activity android:name=".meme.MemeActivity" />
         <activity android:name=".jokes.JokesActivity" />
         <activity android:name=".user.AdminSignup" />
-        <activity android:name=".dashboard.NewActivity" />
         <activity android:name=".notice.UploadNotice">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -30,18 +33,18 @@
         </activity>
         <activity android:name=".notice.ManageNotice" />
         <activity android:name=".user.AdminLogin" />
-        <activity android:name=".dashboard.HomeActivity" />
-        <activity android:name=".notice.ShowNotice" />
-        <activity android:name=".BookActivity" />
-        <activity android:name=".SubjectActivity" />
-        <activity android:name=".BranchActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".dashboard.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".notice.ShowNotice" />
+        <activity android:name=".ebooks.BookActivity" />
+        <activity android:name=".ebooks.SubjectActivity" />
+        <activity android:name=".ebooks.BranchActivity" />
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

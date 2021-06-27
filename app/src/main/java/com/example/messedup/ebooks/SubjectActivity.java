@@ -1,4 +1,4 @@
-package com.example.messedup;
+package com.example.messedup.ebooks;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.messedup.R;
 
 public class SubjectActivity extends AppCompatActivity {
 
@@ -27,51 +29,10 @@ public class SubjectActivity extends AppCompatActivity {
         String branch = getIntent().getStringExtra("branch");
 
 
-        String sub1, sub2, sub3, sub4;
-        switch (year) {
-            case "first_year":
-                sub1 = "math";
-                sub2 = "physics";
-                sub3 = "chemistry";
-                sub4 = "FCIT";
-                break;
-            case "second_year":
-                sub1 = "math2";
-                sub2 = "physics2";
-                sub3 = "chemistry2";
-                sub4 = "OAT";
-                break;
-            case "third_year":
-                sub1 = "math3";
-                sub2 = "physics3";
-                sub3 = "c programming";
-                sub4 = "Graphics designing";
-                break;
-            case "forth_year":
-                sub1 = "java";
-                sub2 = "D E";
-                sub3 = "WEb tech";
-                sub4 = "Databases";
-                break;
-            case "fifth_year":
-                sub1 = "Python";
-                sub2 = "PHP";
-                sub3 = "Software engineering";
-                sub4 = "I O T";
-                break;
-            case "sixth_year":
-                sub1 = "Android";
-                sub2 = "Cloud computing";
-                sub3 = "Advance java";
-                sub4 = "I M E D";
-                break;
-            default:
-                sub1 = "NULL";
-                sub2 = "NULL";
-                sub3 = "NULL";
-                sub4 = "NULL";
-                break;
-        }
+        String sub1 = "math";
+        String sub2 = "physics";
+        String sub3 = "c programming";
+        String sub4 = "OAT";
 
         Toast.makeText(this, "" + year, Toast.LENGTH_SHORT).show();
 

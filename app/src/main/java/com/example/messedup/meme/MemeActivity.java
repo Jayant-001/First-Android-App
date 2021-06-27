@@ -28,6 +28,7 @@ import com.bumptech.glide.request.target.Target;
 import com.bumptech.glide.request.transition.Transition;
 import com.example.messedup.R;
 import com.example.messedup.jokes.JokesActivity;
+import com.github.chrisbanes.photoview.PhotoView;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
@@ -37,7 +38,7 @@ import static android.view.View.GONE;
 
 public class MemeActivity extends AppCompatActivity {
 
-    ImageView memeImage;
+    PhotoView memeImage;
     private Button memeShareBtn, memeNextBtn;
 
     private ProgressDialog dialog;

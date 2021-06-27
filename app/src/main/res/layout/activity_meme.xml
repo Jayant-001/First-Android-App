@@ -22,10 +22,10 @@
 
     </LinearLayout>
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
         android:id="@+id/meme_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
         android:maxHeight="400dp"
         android:layout_marginTop="30dp"
         android:src="@drawable/emoji"

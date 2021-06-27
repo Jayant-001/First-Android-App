@@ -3,4 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="cse_title"><u>C S E</u></string>
+    <string name="ec_title"><u>E C</u></string>
+    <string name="ic_title"><u>I C</u></string>
+    <string name="it_title"><u>I T</u></string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.messedup;
+package com.example.messedup.ebooks;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.messedup.R;
+
 public class BranchActivity extends AppCompatActivity {
 
-    TextView cse, ee, ec, ic;
+    TextView cse, it, ec, ic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,29 +19,26 @@ public class BranchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_branch);
 
         cse = findViewById(R.id.cse);
-        ee = findViewById(R.id.ee);
+        it = findViewById(R.id.it);
         ec = findViewById(R.id.ec);
         ic = findViewById(R.id.ic);
 
-        String year_text = getIntent().getStringExtra("year");
 
 
         cse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BranchActivity.this, SubjectActivity.class);
-                intent.putExtra("year", year_text);
+                Intent intent = new Intent(BranchActivity.this, CSE.class);
                 intent.putExtra("branch", "C S E");
                 startActivity(intent);
             }
         });
 
-        ee.setOnClickListener(new View.OnClickListener() {
+        it.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BranchActivity.this, SubjectActivity.class);
-                intent.putExtra("year", year_text);
-                intent.putExtra("branch", "E E");
+                Intent intent = new Intent(BranchActivity.this, IT.class);
+                intent.putExtra("branch", "I T");
                 startActivity(intent);
             }
         });
@@ -47,8 +46,7 @@ public class BranchActivity extends AppCompatActivity {
         ec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BranchActivity.this, SubjectActivity.class);
-                intent.putExtra("year", year_text);
+                Intent intent = new Intent(BranchActivity.this, EC.class);
                 intent.putExtra("branch", "E C");
                 startActivity(intent);
             }
@@ -57,8 +55,7 @@ public class BranchActivity extends AppCompatActivity {
         ic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BranchActivity.this, SubjectActivity.class);
-                intent.putExtra("year", year_text);
+                Intent intent = new Intent(BranchActivity.this, IC.class);
                 intent.putExtra("branch", "I C");
                 startActivity(intent);
             }
