@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.messedup.R;
 import com.example.messedup.ebooks.BookActivity;
 import com.example.messedup.ebooks.BranchActivity;
+import com.example.messedup.ebooks.ManageEbooks;
 import com.example.messedup.ebooks.SemesterActivity;
 import com.example.messedup.jokes.JokesActivity;
 import com.example.messedup.meme.MemeActivity;
@@ -89,6 +90,13 @@ public class NoticeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(view.getContext(), ManageNotice.class));
+            }
+        });
+
+        showManageBooks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(view.getContext(), ManageEbooks.class));
             }
         });
 
